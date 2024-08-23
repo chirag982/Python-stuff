@@ -23,6 +23,7 @@ operations = {
 again='n'
 answer = 0
 def calculator(again,answer):
+    # basically this function keeps track of the previous result also and ask if we want to proceed with that result or not.
     if again=='n':
         number1 = float(input("What's the first number?"))
         for key in operations:
