@@ -6,7 +6,8 @@ turtles = [""]*5
 position = [-60, -30, 0, 30, 60]
 
 def userBet():
-    user_bet = screen.textinput(title="Make your bet out of these five turtles 'red', 'orange', 'blue', 'purple', 'green'", prompt="Which turtle will win the race")
+    user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race out of these five turtles \nred \norange \nblue \npurple \ngreen")
+    
     if user_bet == "":
         userBet()
     if user_bet in colors != True:
